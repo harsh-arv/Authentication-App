@@ -1,0 +1,66 @@
+<!-- heading -->
+<div class="heading my-5">
+    <h1>
+        <i class="fas fa-user-plus"></i>
+        Sign-Up
+    </h1>
+</div>
+
+
+<!-- form to sign up  -->
+<div class="form-container container w-50">
+    <form action="/user/create" method="POST">
+
+        <div class="mb-3 row">
+            <label for="name" class="col-sm-4 col-form-label">Name</label>
+            <div class="col-sm-8">
+                <input type="text" name="name" class="form-control" id="name" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-4 col-form-label">Email</label>
+            <div class="col-sm-8">
+                <input type="email" name="email" class="form-control" id="staticEmail" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
+            <div class="col-sm-8">
+                <input type="password" name="password" class="form-control" id="inputPassword" required>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="confirmPassword" class="col-sm-4 col-form-label">Confirm Password</label>
+            <div class="col-sm-8">
+                <input type="password" name="confirm_password" class="form-control" id="confirmPassword" required>
+            </div>
+        </div>
+
+        <!-- div to show reCAPTCHA -->
+        <div class="container w-50 mb-3" >
+            <div class="g-recaptcha" data-sitekey="6Lfae54eAAAAABIwqyUDixwJmk5jBToCX_mzpMXV">
+            </div>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-outline-light mb-3">Sign up</button>
+        </div>
+    </form>
+</div>
+
+<!-- links -->
+<div class="other-link ">
+
+    <h3>
+        Other Links
+    </h3>
+    
+    <a  href="/user/auth/google" class="btn btn-primary mb-3">
+        <i class="fa-brands fa-google"></i>
+        Google
+    </a>
+    <a  href="/user/sign-in" class="btn btn-secondary mb-3">
+        <i class="fas fa-user "></i>
+        Sign-In
+    </a>
+    
+</div>
